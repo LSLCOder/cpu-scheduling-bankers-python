@@ -41,9 +41,9 @@ The program starts with a menu. Enter the number corresponding to the algorithm 
   - Determines if the system is in a **SAFE** or **UNSAFE** state
   - If safe, lists the **Safe Sequence**
 
-## 📂 Sample Output
+## 📂 Sample Input / Output
 
-A sample output file (`sample_output.txt`) is included showing example runs for all algorithms, including:
+A sample output file (`sample_input_output.txt`) is included showing example runs for all algorithms, including:
 
 * Entered processes (arrival time + burst time)
 * Gantt Chart
