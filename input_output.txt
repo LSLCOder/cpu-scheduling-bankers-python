@@ -1,0 +1,90 @@
+=== CPU Scheduling & Banker's Algorithm ===
+1. FCFS (Non-preemptive)
+2. Preemptive SJF
+3. Banker's Algorithm
+Choose option: 1
+Enter number of processes: 3
+Arrival time of P0: 0
+Burst time of P0: 5
+Arrival time of P1: 2
+Burst time of P1: 3
+Arrival time of P2: 4
+Burst time of P2: 1
+
+--- FCFS RESULT ---
+
+Gantt Chart:
+P0: 0 -> 5
+P1: 5 -> 8
+P2: 8 -> 9
+
+Average Waiting Time: 2.33
+Average Turnaround Time: 5.33
+
+===========================================================================
+
+=== CPU Scheduling & Banker's Algorithm ===
+1. FCFS (Non-preemptive)
+2. Preemptive SJF
+3. Banker's Algorithm
+Choose option: 2
+Enter number of processes: 4
+Arrival time of P0: 0
+Burst time of P0: 8
+Arrival time of P1: 1
+Burst time of P1: 4
+Arrival time of P2: 2
+Burst time of P2: 9
+Arrival time of P3: 3
+Burst time of P3: 5
+
+--- PREEMPTIVE SJF RESULT ---
+
+Gantt Chart:
+P0: 0 -> 1
+P1: 1 -> 5
+P3: 5 -> 10
+P0: 10 -> 17
+P2: 17 -> 26
+
+Average Waiting Time: 6.50
+Average Turnaround Time: 13.00
+
+===========================================================================
+
+=== CPU Scheduling & Banker's Algorithm ===
+1. FCFS (Non-preemptive)
+2. Preemptive SJF
+3. Banker's Algorithm
+Choose option: 3
+
+--- BANKER'S ALGORITHM ---
+Enter number of processes: 5
+Enter number of resources: 3
+
+Enter Allocation Matrix:
+0 1 0 
+2 0 0
+3 0 2
+2 1 1
+0 0 2
+
+Enter Maximum Matrix:
+7 5 3
+3 2 2
+9 0 2
+2 2 2
+4 3 3
+
+Enter Available Resources:
+3 3 2
+
+Need Matrix:
+P0: [7, 4, 3]
+P1: [1, 2, 2]
+P2: [6, 0, 0]
+P3: [0, 1, 1]
+P4: [4, 3, 1]
+
+System is in a SAFE state.
+Safe Sequence: P1 -> P3 -> P4 -> P0 -> P2
